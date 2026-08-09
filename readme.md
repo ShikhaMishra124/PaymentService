@@ -186,7 +186,7 @@ Returns inconsistent transactions including
 
 ```bash
 git clone <repository-url>
-cd setu-payment-service
+
 ```
 
 ## Create Virtual Environment
@@ -220,7 +220,7 @@ pip install -r requirements.txt
 Create a `.env` file.
 
 ```
-DATABASE_URL=postgresql://username:password@localhost:5432/setu
+DATABASE_URL=postgresql://username:password@localhost:5432/
 API_BASE_URL=http://127.0.0.1:8000
 ```
 
