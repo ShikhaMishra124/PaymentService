@@ -1,4 +1,4 @@
-# Setu Payment Service
+# Payment Service
 
 A production-minded backend service built with **FastAPI** and **PostgreSQL** for ingesting payment lifecycle events, maintaining transaction state, and providing reconciliation APIs for operations teams.
 
@@ -8,11 +8,11 @@ A production-minded backend service built with **FastAPI** and **PostgreSQL** fo
 
 **API Base URL**
 
-https://setuassesment.onrender.com
+https://paymentservice-xu1r.onrender.com/
 
 **Swagger UI**
 
-https://setuassesment.onrender.com/docs
+https://paymentservice-xu1r.onrender.com/docs
 
 ---
 
@@ -240,7 +240,7 @@ http://127.0.0.1:8000/docs
 
 # Loading Sample Data
 
-The assignment-provided `sample_events.json` contains approximately **10,000 payment events** across multiple merchants.
+The  `sample_events.json` contains approximately **10,000 payment events** across multiple merchants.
 
 Import it using:
 
@@ -266,7 +266,7 @@ Deployment includes:
 Public URL
 
 ```
-https://setuassesment.onrender.com
+https://paymentservice-xu1r.onrender.com/
 ```
 
 ---
@@ -323,9 +323,7 @@ These indexes improve lookup speed, filtering, and reconciliation queries.
 
 # Tradeoffs
 
-To keep the assignment focused and easy to review, a few practical tradeoffs were made.
 
-- Authentication and authorization were not implemented because they were outside the assignment scope.
 - Database migrations (e.g., Alembic) were omitted, and tables are created automatically at startup for simpler setup.
 - Reconciliation rules cover the scenarios described in the assignment; a production system would likely support configurable business rules.
 - Bulk event ingestion is implemented synchronously. For much larger datasets, asynchronous processing with a message queue (such as Kafka or RabbitMQ) would improve throughput and resilience.
@@ -359,9 +357,7 @@ The project includes
 
 ---
 
-# AI Usage Disclosure
 
-AI tools (ChatGPT) were used to assist with brainstorming, documentation refinement, debugging, and code review. All implementation decisions, testing, integration, and final validation were completed manually.
 
 ---
 
