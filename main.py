@@ -12,7 +12,7 @@ import services
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Setu Payment Service",
+    title=" Payment Service",
     version="1.0.0"
 )
 
@@ -32,7 +32,7 @@ def get_db():
 @app.get("/")
 def home():
     return {
-        "message": "Setu Payment Service is running"
+        "message": "  Payment Service is running"
     }
 
 
